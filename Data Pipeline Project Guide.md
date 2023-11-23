@@ -82,9 +82,7 @@ sudo mv config.json /opt/aws/amazon-cloudwatch-agent/bin/
 	3. Start the CloudWatch Agent so that it uses the new `config.json` file
 		`sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json`
 	4. To confirm that the agent is now running and active, run the following command: 
-	    `service amazon-cloudwatch-agent statu
-	    
-	    s` 
+	    `service amazon-cloudwatch-agent status` 
 - **Phase 4: Testing the CloudWatch agent**
 	- **Task 1:  Observing the httdp access_log file**
 		1. In the café web application, perform a variety of actions, as you did before to generate logs.
