@@ -89,7 +89,7 @@
 	
 - Replace the existing `access_log` with the new `access_log_geo.log` file:
 	`cd ~/environment`
-	`sudo mv ./samplelogs/access_log_geo.log /var/log/www/access_log`
+	`sudo mv ./samplelogs/access_log_geo.log /var/log/www/access/access_log`
 	
 - Copy the access log from `/var/log/www/access` to the S3 bucket that was provided.
 	- Go to S3 and copy the name of your bucket.
